@@ -1,0 +1,10 @@
+﻿[
+  {
+    "inputFile": "Assets/js/audittrail-disabledcontent.js",
+    "outputFile": "wwwroot/Scripts/audittrail-disabledcontent.js"
+  },
+  {
+    "inputFile": "Assets/scss/audittrail-disabledcontent.scss",
+    "outputFile": "wwwroot/Styles/audittrail-disabledcontent.css"
+  }
+]

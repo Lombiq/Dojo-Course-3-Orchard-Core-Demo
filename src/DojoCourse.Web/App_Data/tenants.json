@@ -2,5 +2,10 @@
   "Default": {
     "Identifier": "4pmcf2gk685crx8xq5wp7xsx4a",
     "State": "Running"
+  },
+  "Demo": {
+    "Identifier": "4fdw0h62eptj92tptavrkvzpdt",
+    "RequestUrlPrefix": "demo",
+    "State": "Running"
   }
 }

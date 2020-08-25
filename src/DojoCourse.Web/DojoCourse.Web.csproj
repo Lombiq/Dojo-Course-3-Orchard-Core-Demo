@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Modules\DojoCourse.Module\DojoCourse.Module.csproj" />
+    <ProjectReference Include="..\Modules\OrchardCore.AuditTrail\OrchardCore.AuditTrail.csproj" />
     <ProjectReference Include="..\Themes\DojoCourse.Theme\DojoCourse.Theme.csproj" />
   </ItemGroup>
 

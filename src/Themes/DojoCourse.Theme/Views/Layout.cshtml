@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="@Orchard.CultureName()">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@RenderTitleSegments(Site.SiteName, "before")</title>
+    <style asp-src="~/DojoCourse.Theme/site.css"></style>
+    <script asp-src="~/DojoCourse.Theme/site.js" at="Head"></script>
+    <resources type="Meta" />
+    <resources type="HeadLink" />
+    <resources type="Stylesheet" />
+    <resources type="HeadScript" />
+    @await RenderSectionAsync("HeadMeta", required: false)
+</head>
+<body dir="@Orchard.CultureDir()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="~/#">@Site.SiteName</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <menu alias="alias:main-menu" cache-id="main-menu" cache-fixed-duration="00:05:00" cache-tag="alias:main-menu" />
+            </div>
+        </div>
+    </nav>
+    @await RenderSectionAsync("Header", required: false)
+    <main role="main" class="container">
+        @await RenderSectionAsync("Messages", required: false)
+        @if (User != null)
+        {
+            @T["Hello, {0}!", User.Identity.Name]
+        }
+
+        @{
+            var blogpostCount = 1;
+        }
+        @T.Plural(blogpostCount, "Here is one blog post.", "Here are {0} blog posts.")
+
+        @*<shape type="AdhocShape" message="@T["This is as parameter."]" />*@
+        @await DisplayAsync(await New.AdhocShape(Message: T["This is as parameter."], User: User))
+
+        @await RenderBodyAsync()
+    </main>
+    @await RenderSectionAsync("Footer", required: false)
+    <resources type="FootScript" />
+</body>
+</html>

@@ -14,6 +14,7 @@
     <PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13450" />
     <PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
     <PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+    <PackageReference Include="OrchardCore.Title" Version="1.0.0-rc2-13450" />
   </ItemGroup>
 
 </Project>

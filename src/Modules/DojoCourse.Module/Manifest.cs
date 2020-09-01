@@ -6,5 +6,6 @@ using OrchardCore.Modules.Manifest;
     Website = "https://orchardcore.net",
     Version = "0.0.1",
     Description = "DojoCourse.Module",
-    Category = "Content Management"
+    Category = "Content Management",
+    Dependencies = new[] { "OrchardCore.ContentFields", "OrchardCore.Media" }
 )]

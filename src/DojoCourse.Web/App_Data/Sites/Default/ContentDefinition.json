@@ -933,6 +933,39 @@
           "Settings": {}
         }
       ]
+    },
+    {
+      "Name": "PersonPage",
+      "DisplayName": "Person Page",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PersonPart",
+          "Name": "PersonPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "PersonWidget",
+      "DisplayName": "Person Widget",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PersonPart",
+          "Name": "PersonPart",
+          "Settings": {}
+        }
+      ]
     }
   ],
   "ContentPartDefinitionRecords": [
@@ -1446,7 +1479,30 @@
         }
       },
       "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PersonPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Biography",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Biography",
+              "Editor": "TextArea"
+            },
+            "TextFieldSettings": {
+              "Hint": "The person's biography."
+            }
+          }
+        }
+      ]
     }
   ],
-  "Serial": 149
+  "Serial": 152
 }

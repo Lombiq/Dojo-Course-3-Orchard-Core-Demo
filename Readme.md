@@ -6,7 +6,9 @@
 
 Dojo Course 3 is the one and only full [Orchard Core CMS](https://www.orchardcore.net/) tutorial. Check out the details on [Orchard Dojo](https://orcharddojo.net/orchard-training/dojo-course-3-the-full-orchard-core-tutorial).
 
-This repository contains the Orchard Core solution used for the demos. Be sure to watch the tutorial videos first and follow along in this solution. If you just want to learn from code check out our [Training Demo Module](https://github.com/Lombiq/Orchard-Training-Demo-Module) that guides you to become an Orchard developer.
+This repository contains the Orchard Core solution used for the demos. The database is also included. Admin credentials are "admin" and "Password1!".
+
+Be sure to watch the tutorial videos first and follow along in this solution. If you just want to learn from code check out our [Training Demo Module](https://github.com/Lombiq/Orchard-Training-Demo-Module) that guides you to become an Orchard developer.
 
 
 ## Contributing and support
